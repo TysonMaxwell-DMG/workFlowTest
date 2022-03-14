@@ -2,6 +2,7 @@ name: Set Variables
 
 on:
   workflow_call:
+    inputs:
       VAR_FILE: 
         required: true
         type: string
