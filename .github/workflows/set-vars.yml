@@ -16,3 +16,4 @@ jobs:
           echo Reading ${{ inputs.VAR_FILE }}
           sed "" ${{ inputs.VAR_FILE }} >> $GITHUB_ENV
         shell: bash
+      - run:  env

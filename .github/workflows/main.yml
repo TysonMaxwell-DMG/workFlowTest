@@ -33,4 +33,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo ${{ env.ecr_registry }} 
+        run: echo ECR = ${{ env.ecr_registry }}
+        run: env
