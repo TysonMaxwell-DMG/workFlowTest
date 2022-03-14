@@ -1,0 +1,16 @@
+name: Set Variables
+
+on:
+  workflow_call:
+      VAR_FILE: 
+        required: true
+        type: string
+
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo Reading ${{ inputs.VAR_FILE }}
+          sed "" ${{ inputs.VAR_FILE }} >> $GITHUB_ENV
+        shell: bash
