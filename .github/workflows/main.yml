@@ -19,7 +19,7 @@ jobs:
     name: Deploy Sandbox
     uses: ./.github/workflows/set-vars.yml
     with:
-      VAR_FILE: variables/all.env
+      VAR_FILE: ./.github/workflows/variables/all.env
 
   build:
     # The type of runner that the job will run on
